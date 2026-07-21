@@ -22,7 +22,6 @@ Typographie : **Instrument Serif** (display) + **Inter** (sans), via `next/font/
 ## Démarrer en local
 
 ```bash
-npm install
 npm run dev
 ```
 
