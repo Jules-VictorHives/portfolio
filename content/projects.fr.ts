@@ -25,8 +25,136 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  slug: "webank",
+  index: "01",
+  year: "2025 — Aujourd'hui",
+  title: "WeBank",
+  subtitle:
+    "Refondre la librairie de Design System d'une application bancaire multi-clients : architecture de tokens, gouvernance des composants, et industrialisation du hand-off.",
+  client: "Elcimaï — WeBank (application bancaire en marque blanche)",
+  role: "UI Designer",
+  scope: [
+    "Design System",
+    "Design Tokens",
+    "Figma Dev Mode",
+    "Hand-off Design → Dev",
+  ],
+  brief:
+    "Une librairie de composants pensée pour scaler sur plusieurs clients bancaires à la fois : une architecture de tokens à trois niveaux, synchronisée avec le code, pour que changer de charte client devienne un clic plutôt qu'une reprise manuelle.",
+  contextHeading: "Le défi : éponger une dette Design accumulée sur plusieurs années",
+  context: [
+    "WeBank est une application bancaire en marque blanche — un socle produit unique (front web/mobile + back-office) déployé chez une dizaine de clients bancaires, chacun avec sa propre charte graphique. Après plusieurs années d'évolutions successives, la librairie Figma avait accumulé une vraie dette Design : des pratiques disparates selon les équipes, des tokens absents ou incomplets, et un écart croissant entre ce qui existait dans Figma et ce qui tournait réellement en production.",
+    "Depuis 8 mois, en binôme, je pilote la refonte complète de cette librairie — un chantier de fond, encore en cours, mené en parallèle de la conception des parcours produit du quotidien.",
+  ],
+  approcheHeading: "Une architecture de tokens à trois niveaux, pensée pour scaler",
+  approche: [
+    "Plutôt que de repartir composant par composant, j'ai commencé par poser l'architecture des variables : un niveau de primitives (couleurs, typographies, espacements bruts), une couche sémantique propre au produit WeBank, et des collections étendues par client. Cette structure signifie qu'appliquer la charte graphique d'un nouveau client bancaire ne demande plus de reprendre chaque maquette à la main — un seul changement de collection suffit.",
+    "Je me suis formé spécifiquement sur ce sujet via les ressources et événements Figma pour construire cette architecture dans les règles, avant de l'appliquer progressivement aux composants puis aux parcours existants — un travail encore en cours aujourd'hui.",
+  ],
+  cover: "/images/projects/Webank Suite.jpg",
+  gallery: [
+    "/images/projects/Variables.jpg",
+    "/images/projects/Process.png",
+    "/images/projects/Storybook.jpg",
+  ],
+  results: [
+    { value: "2 352", label: "Composants dans la librairie" },
+    { value: "286", label: "Component sets organisés" },
+    { value: "1 clic", label: "Pour appliquer une charte client (vs reprise manuelle)" },
+  ],
+  sections: [
+    {
+      heading: "La librairie — organiser 2352 composants sans perdre le fil",
+      body: [
+        "La librairie compte aujourd'hui 2 352 composants, organisés en 286 component sets. Elle est synchronisée avec un Storybook qui alimente directement le code de WeBank Online — l'objectif n'était pas seulement de nettoyer Figma, mais de fermer l'écart entre ce que les designers dessinent et ce que les développeurs implémentent réellement.",
+      ],
+    },
+    {
+      heading: "Théming multi-clients — une charte appliquée en un clic",
+      body: [
+        "Chaque client bancaire de WeBank a sa propre identité visuelle. Avant la refonte, adapter une maquette à une nouvelle charte demandait une reprise manuelle, écran par écran. Grâce aux collections de variables étendues par client, ce travail se réduit désormais à un changement de collection — la charte se propage automatiquement à travers toute la librairie.",
+      ],
+    },
+    {
+      heading: "Hand-off Design → Dev — aligner deux standards hérités",
+      body: [
+        "Le passage en Figma Dev Mode et la systématisation des annotations fonctionnelles ont été une partie du chantier — mais le vrai sujet a été humain autant que technique : ouvrir le dialogue avec les référents développeurs, dont les standards différaient selon les versions historiques du produit, pour converger progressivement, en commençant par les tokens.",
+      ],
+    },
+    {
+      heading: "Un travail encore en cours",
+      body: [
+        "Ce chantier n'est pas terminé : je suis encore en train d'appliquer les tokens aux composants et aux parcours existants, et l'impact sur la vitesse de livraison en production n'est pas encore mesurable formellement. En revanche, le gain est déjà net côté Figma — des fichiers plus légers, un temps de déploiement des évolutions clients largement réduit — et le projet est soutenu par le PM et la direction, avec des retours informels positifs des développeurs sur la fluidité du hand-off.",
+      ],
+    },
+    {
+      heading: "Ce que je retiens de ce projet",
+      body: [
+        "Structurer un Design System à l'échelle d'un produit multi-clients m'a appris que la partie la plus difficile n'est pas de dessiner les bons composants, mais de concevoir une architecture assez robuste pour absorber la diversité sans se fragmenter — et d'embarquer les équipes dev dans cette transition plutôt que de leur imposer un système déconnecté de leur réalité de code.",
+      ],
+    },
+  ],
+  },
+  {
+    slug: "vocab-recall",
+    index: "03",
+    year: "2026",
+    title: "Vocab Recall",
+    subtitle:
+      "Refonte UX/UI, création d’identité et motion design pour une application EdTech d’apprentissage de l’anglais.",
+    client: "Vocab Recall — Application EdTech mobile",
+    role: "Product/UI Designer Freelance — En binôme avec le Lead Developer",
+    scope: [
+      "UI/UX Design",
+      "Brand Identity",
+      "Motion Design (Lottie)",
+      "App Store Optimization (ASO)",
+    ],
+    brief:
+      "Faire passer un MVP au niveau supérieur : direction artistique, mascotte animée, refonte des écrans clés et assets marketing pour un lancement réussi sur les stores.",
+    contextHeading: "Le défi : transformer un MVP en une application « Market-Ready »",
+    context: [
+      "Vocab Recall est une application mobile EdTech dédiée à l’apprentissage et à la mémorisation du vocabulaire anglais. J’ai été sollicité en freelance par le créateur de l’application (Développeur Full-Stack) pour faire passer le produit au niveau supérieur avant son lancement officiel.",
+      "Le brief technique comportait des références précises, mais tout restait à construire sur le plan de l’expérience utilisateur et de l’identité visuelle. Mon rôle a été d’apporter une vision design globale : de la définition du Brandbook jusqu’à la refonte complète des écrans, en passant par l’animation de l’interface pour engager les futurs utilisateurs.",
+    ],
+    approcheHeading: "Une identité ludique et animée",
+    approche: [
+      "L’apprentissage d’une langue nécessite de la régularité. Pour éviter l’attrition (churn) et rendre l’expérience engageante, j’ai conçu un Brandbook complet incluant de nouvelles palettes de couleurs, des choix typographiques modernes et la création d’une mascotte emblématique.",
+      "Pour donner vie à cette identité, j’ai animé la mascotte via Figma et Lottie Files. Ces micro-interactions et animations ont été stratégiquement intégrées dans l’application pour récompenser l’utilisateur et dynamiser son parcours, rendant l’interface beaucoup plus organique et vivante.",
+    ],
+    cover: "/images/projects/3_1.png",
+    gallery: [
+      "/images/projects/3_2.png",
+      "/images/projects/3_3.png",
+      "/images/projects/3_4.png",
+    ],
+    results: [],
+    sections: [
+      {
+        heading: "Optimiser l’acquisition — onboarding et paywall",
+        body: [
+          "L’un des chantiers majeurs a été la conception du parcours d’onboarding. Les premières secondes d’une application sont cruciales. J’ai structuré un parcours d’accueil fluide qui éduque l’utilisateur sur la valeur de l’app, tout en le guidant naturellement vers un « Paywall » (mur de paiement) optimisé pour la conversion.",
+          "En parallèle, j’ai mené la refonte UI des écrans principaux (dashboard, listes de vocabulaire, modules de révision) en appliquant les standards d’ergonomie mobile (iOS/Android) pour garantir une navigation intuitive et réduire la charge cognitive pendant l’apprentissage.",
+        ],
+      },
+      {
+        heading: "Séduire dès l’App Store",
+        body: [
+          "Mon intervention ne s’est pas arrêtée à la conception du produit. Pour assurer un lancement réussi, j’ai également conçu les écrans de présentation (screenshots promotionnels) destinés à l’App Store et au Google Play Store. Ces visuels ont été pensés comme de véritables assets marketing, mettant en avant les fonctionnalités clés et la proposition de valeur de Vocab Recall pour maximiser le taux de téléchargement.",
+        ],
+      },
+      {
+        heading: "Ce que je retiens de ce projet",
+        body: [
+          "Travailler en binôme direct avec un développeur Full-Stack a été extrêmement formateur. Cela m’a poussé à livrer des assets techniques irréprochables (fichiers Lottie, spécifications de design) pour faciliter l’intégration. Ce projet illustre ma capacité à prendre en charge le design d’un produit numérique de A à Z : de la réflexion de marque à l’optimisation des revenus via le paywall, jusqu’à la création des supports d’acquisition.",
+        ],
+      },
+    ],
+  },
+  /*
+  {
     slug: "rua-martine",
-    index: "01",
+    index: "02",
     year: "2022 — 2023",
     title: "Rua Martine",
     subtitle:
@@ -96,6 +224,8 @@ export const projects: Project[] = [
       },
     ],
   },
+  */
+  /*
   {
     slug: "joe-bijoux",
     index: "02",
@@ -146,62 +276,7 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    slug: "vocab-recall",
-    index: "03",
-    year: "2026",
-    title: "Vocab Recall",
-    subtitle:
-      "Refonte UX/UI, création d’identité et motion design pour une application EdTech d’apprentissage de l’anglais.",
-    client: "Vocab Recall — Application EdTech mobile",
-    role: "Product/UI Designer Freelance — En binôme avec le Lead Developer",
-    scope: [
-      "UI/UX Design",
-      "Brand Identity",
-      "Motion Design (Lottie)",
-      "App Store Optimization (ASO)",
-    ],
-    brief:
-      "Faire passer un MVP au niveau supérieur : direction artistique, mascotte animée, refonte des écrans clés et assets marketing pour un lancement réussi sur les stores.",
-    contextHeading: "Le défi : transformer un MVP en une application « Market-Ready »",
-    context: [
-      "Vocab Recall est une application mobile EdTech dédiée à l’apprentissage et à la mémorisation du vocabulaire anglais. J’ai été sollicité en freelance par le créateur de l’application (Développeur Full-Stack) pour faire passer le produit au niveau supérieur avant son lancement officiel.",
-      "Le brief technique comportait des références précises, mais tout restait à construire sur le plan de l’expérience utilisateur et de l’identité visuelle. Mon rôle a été d’apporter une vision design globale : de la définition du Brandbook jusqu’à la refonte complète des écrans, en passant par l’animation de l’interface pour engager les futurs utilisateurs.",
-    ],
-    approcheHeading: "Une identité ludique et animée",
-    approche: [
-      "L’apprentissage d’une langue nécessite de la régularité. Pour éviter l’attrition (churn) et rendre l’expérience engageante, j’ai conçu un Brandbook complet incluant de nouvelles palettes de couleurs, des choix typographiques modernes et la création d’une mascotte emblématique.",
-      "Pour donner vie à cette identité, j’ai animé la mascotte via Figma et Lottie Files. Ces micro-interactions et animations ont été stratégiquement intégrées dans l’application pour récompenser l’utilisateur et dynamiser son parcours, rendant l’interface beaucoup plus organique et vivante.",
-    ],
-    cover: "/images/projects/3_1.png",
-    gallery: [
-      "/images/projects/3_2.png",
-      "/images/projects/3_3.png",
-      "/images/projects/3_4.png",
-    ],
-    results: [],
-    sections: [
-      {
-        heading: "Optimiser l’acquisition — onboarding et paywall",
-        body: [
-          "L’un des chantiers majeurs a été la conception du parcours d’onboarding. Les premières secondes d’une application sont cruciales. J’ai structuré un parcours d’accueil fluide qui éduque l’utilisateur sur la valeur de l’app, tout en le guidant naturellement vers un « Paywall » (mur de paiement) optimisé pour la conversion.",
-          "En parallèle, j’ai mené la refonte UI des écrans principaux (dashboard, listes de vocabulaire, modules de révision) en appliquant les standards d’ergonomie mobile (iOS/Android) pour garantir une navigation intuitive et réduire la charge cognitive pendant l’apprentissage.",
-        ],
-      },
-      {
-        heading: "Séduire dès l’App Store",
-        body: [
-          "Mon intervention ne s’est pas arrêtée à la conception du produit. Pour assurer un lancement réussi, j’ai également conçu les écrans de présentation (screenshots promotionnels) destinés à l’App Store et au Google Play Store. Ces visuels ont été pensés comme de véritables assets marketing, mettant en avant les fonctionnalités clés et la proposition de valeur de Vocab Recall pour maximiser le taux de téléchargement.",
-        ],
-      },
-      {
-        heading: "Ce que je retiens de ce projet",
-        body: [
-          "Travailler en binôme direct avec un développeur Full-Stack a été extrêmement formateur. Cela m’a poussé à livrer des assets techniques irréprochables (fichiers Lottie, spécifications de design) pour faciliter l’intégration. Ce projet illustre ma capacité à prendre en charge le design d’un produit numérique de A à Z : de la réflexion de marque à l’optimisation des revenus via le paywall, jusqu’à la création des supports d’acquisition.",
-        ],
-      },
-    ],
-  },
+  */
 ];
 
 export function getProject(slug: string): Project | undefined {

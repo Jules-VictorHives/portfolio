@@ -18,8 +18,7 @@ export function Contact() {
 
       <FadeUp delay={0.1} className="mt-12 max-w-xl text-ink/80">
         <p>
-          Que ce soit pour une refonte, un design system ou une exploration sensorielle —
-          j’aime les projets où la rigueur scientifique rencontre le soin du détail.
+          Envie d'échanger sur un produit complexe à structurer ?
         </p>
       </FadeUp>
 

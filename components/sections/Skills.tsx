@@ -29,7 +29,7 @@ export function Skills() {
     <section id="competences" className="container py-24 md:py-32">
       <FadeUp>
         <h2 className="font-serif text-5xl md:text-7xl tracking-tightest leading-[1.02] mb-16 text-balance">
-          Boîte à outils. <span className="text-ink/40">Méthodes douces.</span>
+          Boîte à outils. <span className="text-ink/40">Méthodes.</span>
         </h2>
       </FadeUp>
 

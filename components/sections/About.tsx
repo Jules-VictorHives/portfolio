@@ -19,18 +19,14 @@ export function About() {
               className="object-cover"
               priority
             />
-            <div className="absolute bottom-4 left-4 right-4 text-[10px] uppercase tracking-widest text-bg/90 mix-blend-difference flex justify-between">
-              <span>Réf. 001</span>
-              <span>{profile.location}</span>
-            </div>
           </div>
         </FadeUp>
 
         <div className="md:col-span-7 md:pt-6">
           <FadeUp>
             <h2 className="font-serif text-4xl md:text-6xl leading-tight tracking-tightest text-balance">
-              Soin, lecture, mouvement. <br />
-              <span className="text-ink/40">— trois gestes qui guident mon travail.</span>
+              Business, Système, Design. <br />
+              <span className="text-ink/40">— trois mots qui guident mon travail.</span>
             </h2>
           </FadeUp>
           <div className="mt-10 space-y-6 text-ink/80 max-w-xl">

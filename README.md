@@ -22,6 +22,7 @@ Typographie : **Instrument Serif** (display) + **Inter** (sans), via `next/font/
 ## Démarrer en local
 
 ```bash
+cd portfolio
 npm run dev
 ```
 
