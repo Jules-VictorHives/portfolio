@@ -22,9 +22,17 @@ Typographie : **Instrument Serif** (display) + **Inter** (sans), via `next/font/
 ## Démarrer en local
 
 ```bash
-cd portfolio
 npm run dev
 ```
+
+## git upload
+
+```bash
+git add .
+git commit -m "commit message"
+git push 
+```
+
 
 Puis ouvrir [http://localhost:3000](http://localhost:3000).
 

@@ -151,7 +151,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  /*
   {
     slug: "rua-martine",
     index: "02",
@@ -224,8 +223,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  */
-  /*
   {
     slug: "joe-bijoux",
     index: "02",
@@ -276,7 +273,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  */
 ];
 
 export function getProject(slug: string): Project | undefined {
